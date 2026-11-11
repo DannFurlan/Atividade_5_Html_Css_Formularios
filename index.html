@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #eeeeee;
+      display: flex;
+      justify-content: center;
+    }
+
+    form {
+      background-color: white;
+      width: 100%;
+      max-width: 380px;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="date"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 6px;
+      border: 1px solid gray;
+      border-radius: 6px;
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus {
+      border-color: blue;
+      background-color: #eef4ff;
+    }
+
+    button {
+      margin-top: 15px;
+      padding: 8px 16px;
+      border: none;
+      border-radius: 5px;
+      background-color: blue;
+      color: white;
+    }
+
+    button:hover {
+      background-color: rgb(23, 86, 221);
+    }
+  </style>
+</head>
+
+<body>
+  <form>
+    <h2>Formulário</h2>
+
+    <label>Nome Completo</label>
+    <input type="text">
+
+    <label>E-mail</label>
+    <input type="email">
+
+    <label>Senha</label>
+    <input type="password">
+
+    <label>Data de nascimento</label>
+    <input type="date">
+
+    <label>Curso</label>
+    <select>
+      <option>Engenharia de Software</option>
+      <option>Ciencia da Computação</option>
+      <option>Analise e desenvolvimento de sistemas</option>
+      <option>Outro</option>
+    </select>
+
+    <label>Sexo</label>
+    <input type="radio" name="sexo"> Masculino
+    <input type="radio" name="sexo"> Feminino
+
+    <label>Interesses</label>
+    <input type="checkbox"> Programação
+    <input type="checkbox"> Dados
+
+    <label>Comentários</label>
+    <textarea></textarea>
+
+    <label>Foto</label>
+    <input type="file">
+
+    <button>Enviar</button>
+  </form>
+</body>
+</html>
